@@ -3,10 +3,22 @@
   <dmn:extensionElements/>
   <dmn:decision id="_3ECD5C88-8B4F-4335-A6E0-939138091C12" name="Calcular días de vacaciones">
     <dmn:extensionElements/>
-    <dmn:variable id="_38EB429D-EDD6-4FB4-ADE8-3E8FA45680AE" name="Calcular días de vacaciones"/>
+    <dmn:variable id="_38EB429D-EDD6-4FB4-ADE8-3E8FA45680AE" name="Calcular días de vacaciones" typeRef="number"/>
     <dmn:informationRequirement id="_11ED80B5-ED8D-4543-8DDE-0C852B001461">
       <dmn:requiredDecision href="#_F5293B4E-2514-4875-B13E-96C5C8CE4DFE"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_2DDFE448-625B-44FE-9B32-0DFA1FF85CF9">
+      <dmn:requiredDecision href="#_CC6FCF1E-867A-42EF-936F-EED31790CB4B"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_7B718EA9-84C6-4D9A-92FC-0394DDC5DC59">
+      <dmn:requiredDecision href="#_0DFCBA2C-40D5-4D75-91EB-BD28CDC765D8"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_668C3FC8-1B56-465F-A2C6-376ACFBCDF3E">
+      <dmn:requiredDecision href="#_E8B5484D-6327-467A-B396-7A498715E7BD"/>
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="_96045711-1F9C-446E-9AA2-1DBDE6737B94">
+      <dmn:text></dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_0E43B620-A1D2-4E2E-9986-06C056712960" name="Edad">
     <dmn:extensionElements/>
@@ -53,7 +65,11 @@
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_96045711-1F9C-446E-9AA2-1DBDE6737B94">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_CC6FCF1E-867A-42EF-936F-EED31790CB4B" dmnElementRef="_CC6FCF1E-867A-42EF-936F-EED31790CB4B" isCollapsed="false">
         <dmndi:DMNStyle>
@@ -128,6 +144,18 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_11ED80B5-ED8D-4543-8DDE-0C852B001461" dmnElementRef="_11ED80B5-ED8D-4543-8DDE-0C852B001461">
         <di:waypoint x="1209" y="292"/>
+        <di:waypoint x="763.5" y="190"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_2DDFE448-625B-44FE-9B32-0DFA1FF85CF9" dmnElementRef="_2DDFE448-625B-44FE-9B32-0DFA1FF85CF9">
+        <di:waypoint x="569" y="286"/>
+        <di:waypoint x="763.5" y="190"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_7B718EA9-84C6-4D9A-92FC-0394DDC5DC59" dmnElementRef="_7B718EA9-84C6-4D9A-92FC-0394DDC5DC59">
+        <di:waypoint x="770" y="286"/>
+        <di:waypoint x="763.5" y="190"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_668C3FC8-1B56-465F-A2C6-376ACFBCDF3E" dmnElementRef="_668C3FC8-1B56-465F-A2C6-376ACFBCDF3E">
+        <di:waypoint x="971" y="290"/>
         <di:waypoint x="763.5" y="190"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_5EAC2A25-92D7-4D51-94CD-53DA17FD4ABA" dmnElementRef="_5EAC2A25-92D7-4D51-94CD-53DA17FD4ABA">
